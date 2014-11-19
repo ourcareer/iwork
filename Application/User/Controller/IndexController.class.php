@@ -1,5 +1,5 @@
 <?php
-namespace Home\Controller;
+namespace User\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function hi(){
@@ -18,7 +18,8 @@ class IndexController extends Controller {
 	    	$password = I('password');
 	    	$repassword = I('repassword');
 
-	    	dump(I());
+	    	// dump(I());
+	    	// exit();
 
 	    	// 验证数据
 	    	// TODO
@@ -34,7 +35,8 @@ class IndexController extends Controller {
 	    	$User->create($data);
 	    	$result = $User->add($data);
 	    	if ($result) {
-	    		$this->success('succeed');
+	    		$this->success('succeed!');
+	    		exit();
 	    	}
     	}
     }    
