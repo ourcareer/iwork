@@ -9,7 +9,7 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 define('APP_DEBUG',True);
 
 // define('BIND_MODULE', 'User');
-define('BIND_MODULE', 'Api');
+// define('BIND_MODULE', 'Api');
 
 // 定义应用目录
 define('APP_PATH','./Application/');
