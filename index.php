@@ -10,6 +10,7 @@ define('APP_DEBUG',True);
 
 // define('BIND_MODULE', 'User');
 // define('BIND_MODULE', 'Api');
+// define('BIND_MODULE', 'Auth');
 
 // 定义应用目录
 define('APP_PATH','./Application/');

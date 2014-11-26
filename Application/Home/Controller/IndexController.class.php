@@ -1,9 +1,16 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+
+
 class IndexController extends Controller {
     public function hi(){
         $this->show('hi');
+    }
+
+    public function index(){
+    	dump(session());
+    	exit();
     }
 
 
