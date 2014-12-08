@@ -1,43 +1,28 @@
 <?php
+
+/**
+ * 
+ */
 namespace User\Controller;
 use Think\Controller;
+
+/**
+ * 类说明
+ */
 class IndexController extends Controller {
+	/**
+	 * 方法说明
+	 */
     public function hi(){
         $this->show('hi');
+    } 
+
+    public function index(){
+    	$username = I('username');
+    	$password = I('password');
+    	// $user 
+    	// 检查数据
+    	
     }
 
-
-    /**
-     * 用户注册
-     * @author ancon<zhongfuzhong@gmail.com>
-     */
-    public function register(){
-    	if (IS_POST) {
-	    	$email = I('email');
-	    	$username = I('username');
-	    	$password = I('password');
-	    	$repassword = I('repassword');
-
-	    	// dump(I());
-	    	// exit();
-
-	    	// 验证数据
-	    	// TODO
-
-	    	// 实例化模型
-	    	$User = M('user');
-	    	// 保存数据
-	    	$data = array(
-	    		'email'	=>	$email,
-	    		'username'	=> $username,
-	    		'password'	=>	$password,
-	    		);
-	    	$User->create($data);
-	    	$result = $User->add($data);
-	    	if ($result) {
-	    		$this->success('succeed!');
-	    		exit();
-	    	}
-    	}
-    }    
 }
