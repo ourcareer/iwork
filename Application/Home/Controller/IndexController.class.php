@@ -4,8 +4,9 @@ use Think\Controller;
 
 
 class IndexController extends Controller {
+	
     public function hi(){
-        $this->show('hi');
+        $this->show('hi，world');
     }
 
     public function index(){
